@@ -1,21 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Speed Tunes Support</title>
+  <title>Speed Tunes Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    header p.subtitle {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin-top: 4px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      background: #16213e;
+      padding: 0 24px 16px;
+    }
+    nav a {
+      color: #a0b4d6;
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    nav a.active { background: rgba(255,255,255,0.15); color: #fff; font-weight: 600; }
+    main {
+      max-width: 740px;
+      margin: 60px auto;
+      padding: 0 24px 60px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      padding: 40px 36px;
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+    }
+    .card p { color: #4a5568; margin-bottom: 12px; }
+    .email-btn {
+      display: inline-block;
+      margin-top: 16px;
+      background: linear-gradient(135deg, #1a1a2e, #3b82f6);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .email-btn:hover { opacity: 0.85; }
+    .response-time {
+      display: inline-block;
+      margin-top: 20px;
+      background: #e2e8f0;
+      color: #64748b;
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
-<body style="font-family: -apple-system, Arial; max-width: 700px; margin: auto; padding: 20px; line-height: 1.6;">
 
-<nav style="margin-bottom: 24px;">
-  <a href="index.html">Privacy Policy</a> &nbsp;|&nbsp;
-  <a href="support.html">Support</a>
+<body>
+
+<header>
+  <h1>Speed Tunes</h1>
+  <p class="subtitle">Support</p>
+</header>
+
+<nav>
+  <a href="index.html">Privacy Policy</a>
+  <a href="support.html" class="active">Support</a>
 </nav>
 
-    <h1>Speed Tunes Support</h1>
+<main>
+  <div class="card">
+    <h2>Need help or have feedback?</h2>
+    <p>We&rsquo;re happy to help. Send us an email and we&rsquo;ll get back to you as soon as possible.</p>
+    <a class="email-btn" href="mailto:lacouraudio@gmail.com">lacouraudio@gmail.com</a>
+    <br>
+    <span class="response-time">Response time: 1&ndash;3 business days</span>
+  </div>
+</main>
 
-    <p>Need help or have feedback?</p>
-
-    <p>Email: <a href="mailto:lacouraudio@gmail.com">lacouraudio@gmail.com</a></p>
-
-    <p>Response time: 1-3 business days.</p>
 </body>
 </html>
